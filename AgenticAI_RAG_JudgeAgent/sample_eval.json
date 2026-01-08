@@ -1,0 +1,22 @@
+[
+  {
+    "question": "Who wrote '1984'?",
+    "ground_truth": "George Orwell",
+    "contexts": []
+  },
+  {
+    "question": "What is the capital of France?",
+    "ground_truth": "Paris",
+    "contexts": []
+  },
+  {
+    "question": "Which landmark is found in Paris?",
+    "ground_truth": "The Eiffel Tower",
+    "contexts": []
+  },
+  {
+    "question": "What kind of tool is Langfuse?",
+    "ground_truth": "Langfuse is an observability tool for LLM applications that tracks prompts, answers, and latency.",
+    "contexts": []
+  }
+]

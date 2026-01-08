@@ -1,0 +1,25 @@
+# === Core LLM & Observability ===
+groq>=0.3.0             # Groq LLM client (OpenAI-compatible)
+langfuse>=3.0.0         # Observability & tracing dashboard
+
+# === Evaluation & Dataset Handling ===
+ragas>=0.3.7            # Evaluation metrics (offline / optional)
+datasets>=2.20.0        # Dataset loading & manipulation
+
+# === Data Science & Utilities ===
+numpy>=1.26.4           # Core numerical computations
+scikit-learn>=1.4.2     # Metrics / vector utilities
+tabulate>=0.9.0         # Console reporting tables
+python-dotenv>=1.0.1    # Environment variable management
+
+# === PDF Ingestion & Reporting ===
+pypdf>=4.2.0            # PDF reading and parsing
+reportlab>=4.2.2        # PDF report generation
+
+# === (Optional) Retrieval / Embedding Engines ===
+faiss-cpu>=1.8.0        # Local vector store (for ingestion)
+chromadb>=0.5.3         # Lightweight vector DB alternative
+
+# === Embeddings (local) ===
+sentence-transformers>=2.7.0
+
