@@ -1,4 +1,6 @@
 ## Agentic AI --- PDF RAG + Judge Agent (with Optional Langfuse)
+> 🏁 **STATUS: PROJECT COMPLETE**  
+> This project is finalized and maintained for portfolio and demonstration purposes.
 
 This project demonstrates a **production-style agentic RAG pipeline**
 designed to generate **grounded answers from documents** and **validate
