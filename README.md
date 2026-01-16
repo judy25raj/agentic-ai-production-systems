@@ -1,80 +1,112 @@
-# 🧩 Agentic AI & Cloud Observability Portfolio  
-### *by Judy Raj*
+# ⭐ Agentic AI Systems & Cloud Observability
 
----
+**Author: Judy Raj**
 
-Welcome to my **professional AI engineering portfolio** — a curated collection of hands-on projects demonstrating practical expertise in:
+This repository contains **production-style Agentic AI systems**
+demonstrating how **Retrieval-Augmented Generation (RAG)**, multi-agent
+workflows, evaluation, and **cloud observability** can be combined to
+build reliable, debuggable AI applications.
 
-- **Agentic AI systems**
-- **Retrieval-Augmented Generation (RAG)**
-- **AI evaluation and quality assurance**
-- **Cloud deployment and observability**
-- **Production-grade system design**
+The focus is on **real-world engineering practices**: clear agent
+responsibilities, structured outputs, quality checks, and operational
+visibility.
 
-This portfolio emphasizes **real-world engineering practices**, combining AI reasoning pipelines with enterprise observability and operational discipline.
+------------------------------------------------------------------------
 
----
+## 🧠 Featured Project 1 --- Agentic AI: PDF RAG with Judge Agent
 
-## 📊 Featured Projects
+### Problem Addressed
 
----
+LLM-based systems require **grounded responses and quality validation**.
+This project demonstrates how multiple AI agents collaborate to ensure
+accuracy, relevance, and traceability when answering questions from
+documents.
 
-### 🧠 Project 1 — Agentic AI: PDF RAG with Judge Agent
+### Architecture Flow
 
-**Description**  
-A modular Agentic AI system that performs Retrieval-Augmented Generation (RAG) on PDF documents and evaluates generated responses using a dedicated **Judge Agent**. The project demonstrates how multiple AI agents collaborate to retrieve context, generate answers, and assess response quality in a structured and repeatable workflow.
+1.  PDF documents are ingested and chunked
+2.  A retrieval agent performs vector-based semantic search
+3.  A generation agent produces a response using retrieved context
+4.  A judge agent evaluates response quality and relevance
+5.  Structured JSON output is produced for traceability and scoring
 
-**Key Capabilities**
-- Multi-agent workflow (Retriever → Generator → Judge)
-- PDF ingestion and vector-based semantic search
-- LLM-driven answer generation
-- Automated evaluation and scoring
-- Structured JSON outputs for traceability
+*(Architecture diagram available in the `architecture/` folder.)*
 
-**Skills & Technologies**  
-`Python` · `Agentic AI` · `RAG` · `Vector Embeddings` · `AI Evaluation` · `Prompt Engineering`
+### Key Capabilities
 
-📁 **Folder:** `agentic-ai-pdf-rag-judge`
+-   Multi-agent workflow (Retriever → Generator → Judge)
+-   PDF ingestion with vector embeddings
+-   LLM-driven response generation
+-   Automated evaluation and scoring
+-   Deterministic, structured outputs
 
----
+### Skills & Technologies
 
-### ☁️ Project 2 — Atomic Agent on Azure with Elastic Observability
+**Python · Agentic AI · RAG · Vector Embeddings · AI Evaluation · Prompt
+Engineering**
 
-**Description**  
-A cloud-deployed atomic agent running on **Microsoft Azure** with centralized logging, metrics, and observability using the **Elastic Stack**. This project focuses on operational visibility, demonstrating how agent execution can be monitored, analyzed, and debugged in a production-style environment.
+📁 Folder: `agentic-ai-pdf-rag-judge`
 
-**Key Capabilities**
-- Atomic agent execution model
-- Azure VM–based deployment
-- Centralized logging and metrics collection
-- Observability dashboards and trace analysis
-- Operational monitoring for distributed systems
+------------------------------------------------------------------------
 
-**Skills & Technologies**  
-`Azure` · `Elastic Stack` · `Observability` · `Cloud Operations` · `Automation`
+## ☁️ Featured Project 2 --- Atomic Agent on Azure with Elastic Observability
 
-📁 **Folder:** `atomic-agent-azure-elastic-observability`
+### Problem Addressed
 
----
+AI agents running in production must be **observable, debuggable, and
+auditable**. This project focuses on **operational visibility** rather
+than model accuracy alone.
 
-## 👩‍💻 About Me
+### Architecture Flow
 
-Senior IT professional with extensive experience in enterprise application development, automation, QA, and production support. Recently specialized in:
+1.  Atomic AI agent executes a defined task
+2.  Execution logs and metrics are generated
+3.  Data is shipped to the Elastic Stack
+4.  Dashboards provide runtime visibility and trace analysis
 
-- **Agentic AI & AI evaluation frameworks**
-- **Cybersecurity fundamentals**
-- **Python automation**
-- **Cloud observability and monitoring**
+### Key Capabilities
 
-This portfolio represents **implementation-focused engineering work**, aligned with real-world enterprise system design rather than academic demonstrations.
+-   Atomic agent execution model
+-   Azure VM--based deployment
+-   Centralized logging and metrics
+-   Observability dashboards
+-   Operational monitoring for distributed systems
 
----
+### Skills & Technologies
 
-## 📝 Notes
+**Azure · Elastic Stack · Observability · Cloud Operations ·
+Automation**
 
-- Sensitive configuration values are excluded from the repository  
-- Environment variables are managed using `.env.example` files  
-- Each project folder contains its own detailed README  
-- Projects are designed to be extensible and production-aligned  
+📁 Folder: `atomic-agent-azure-elastic-observability`
 
----
+------------------------------------------------------------------------
+
+## ▶️ How to Run (Example)
+
+``` bash
+pip install -r requirements.txt
+python main.py
+```
+
+Each project folder contains additional setup instructions.
+
+------------------------------------------------------------------------
+
+## 👩‍💻 About
+
+Senior Platform & Automation Engineer with extensive experience in
+enterprise application development, automation, and production support.
+Currently focused on **Agentic AI systems, AI evaluation frameworks,
+Python automation, and cloud observability** in regulated environments.
+
+This repository reflects **implementation-focused engineering work**
+rather than academic demonstrations.
+
+------------------------------------------------------------------------
+
+## 📌 Notes
+
+-   Sensitive configuration values are excluded
+-   Environment variables are managed using `.env.example`
+-   Each project folder contains a detailed README
+-   Designs are extensible and production-aligned
