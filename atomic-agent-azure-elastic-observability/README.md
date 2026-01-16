@@ -1,102 +1,129 @@
-# Atomic Agent – Azure + Elastic Observability (Logs, APM, Metrics) + Vector Search Demo
+# Atomic Agent – Azure + Elastic Observability
 
-Production-style **atomic agent simulator** that runs locally or on an **Azure VM** and emits:
-- ✅ **Structured JSON logs** (rotating file)
-- ✅ **Elastic APM traces/transactions/spans** (optional)
-- ✅ **Elastic ingest assets** (Agent config, ingest pipeline, index template)
-- ✅ **Vector search / embeddings demo assets** (example scripts + workflows)
+A **production-style observability project** that demonstrates how a lightweight *Atomic Agent* running on an **Azure VM** can emit system metrics, structured logs, and traces into **Elastic Stack**, enabling real-time monitoring through **Kibana dashboards**.
 
-> **Safe to publish:** no credentials included. Uses `.env.example` and `.gitignore` blocks common secrets.
+This project is designed as a **portfolio-grade example** aligned with **Agentic AI**, **Platform Engineering**, and **Cloud Observability** best practices.
 
 ---
 
-## 🏁 STATUS: PROJECT COMPLETE
-**What I built:** An atomic-agent workload that produces realistic telemetry (logs + traces) and a companion set of Elastic assets that show how to ingest, parse, and observe the agent end-to-end (plus a vector-search demo starter).  
-**Why it matters:** Mirrors real platform engineering concerns: standardized telemetry, correlation, and repeatable ingestion patterns that scale from a single Azure VM to fleet deployment.
+## 🚀 Project Overview
+
+The Atomic Agent runs as a Python process on an Azure Linux VM and periodically emits:
+
+- Host-level system metrics (CPU, memory, disk)
+- Structured JSON logs
+- Heartbeat-style operational signals
+
+These signals flow through Elastic ingest pipelines into Elasticsearch indices and are visualized using Kibana’s Observability and Infrastructure views.
 
 ---
 
-## Key capabilities
-### 1) Atomic agent simulator (Python)
-- Generates realistic action events (success/failure, latency)
-- Writes **structured JSON logs** to a rotating log file
-- Emits **Elastic APM** transactions/spans (optional)
+## 🏗 Architecture
 
-### 2) Elastic observability assets
-- Example **Elastic Agent** configuration for log shipping
-- Example **ingest pipeline** for parsing and enrichment
-- Example **index template** for stable mappings
+![Architecture](screenshots/architecture.png)
 
-### 3) Embeddings / vector search demo (starter)
-- Example scripts showing how embeddings could be generated
-- Example semantic search workflow and index setup ideas
+**Flow:**
+
+Azure VM  
+→ Atomic Agent (Python)  
+→ Elastic Ingest Pipeline  
+→ Elasticsearch Index  
+→ Kibana (Discover, Dashboards, Infrastructure)
 
 ---
 
-## Architecture
-**Flow**
-1. `atomic_agent.py` generates actions and telemetry  
-2. Logs are written to `agent.log` (JSON)  
-3. Elastic Agent ships logs → Elasticsearch ingest pipeline → logs index  
-4. Elastic APM agent sends traces → APM Server → Elasticsearch → Kibana  
-5. (Optional) embeddings scripts build vectors → vector index → semantic search demo
+## 🔍 What This Project Demonstrates
+
+- Azure VM provisioning and secure SSH access
+- Custom agent-based telemetry generation
+- Structured logging with parsed fields
+- Elastic Observability (Logs, Metrics, Infrastructure)
+- Kibana dashboards built from real telemetry
+- Production-style folder and README structure
 
 ---
 
-## Repo structure
+## 📊 Observability Evidence
+
+### Azure VM Infrastructure Metrics
+![Infrastructure Hosts](screenshots/infrastructure_hosts.png)
+
+Shows real-time CPU, memory, and disk utilization for the Azure VM host as detected by Elastic Infrastructure monitoring.
+
+---
+
+### Parsed Logs in Kibana Discover
+![Parsed Logs](screenshots/kibana-discover-parsed-logs.jpg)
+
+Demonstrates structured logs emitted by the Atomic Agent, including custom fields such as CPU, memory, disk usage, and embeddings metadata.
+
+---
+
+### Kibana Observability Dashboard
+![Observability Dashboard](screenshots/kibana-observability-dashboard.jpg)
+
+A custom dashboard visualizing:
+- CPU utilization trends
+- Memory consumption
+- Disk usage
+- Log volume over time
+
+---
+
+## 🧠 Why This Matters (Portfolio Value)
+
+This project goes beyond basic logging by showing:
+
+- Agent-style telemetry instead of platform defaults
+- Clean separation of ingestion, indexing, and visualization
+- Cloud-native observability aligned with real SRE workflows
+- Skills relevant to **Platform Engineering**, **Cloud Infra**, and **Agentic AI systems**
+
+Recruiters can clearly see **how data flows**, **how it’s structured**, and **how it’s operationalized**.
+
+---
+
+## 🛠 Tech Stack
+
+- **Cloud:** Azure VM (Linux)
+- **Language:** Python
+- **Observability:** Elastic Stack (Elasticsearch, Kibana)
+- **Logging & Metrics:** Custom Atomic Agent
+- **Dashboards:** Kibana Observability & Infrastructure
+
+---
+
+## 📁 Repository Structure
+
 ```
 atomic-agent-azure-elastic-observability/
-├─ agent/
-│  ├─ atomic_agent.py
-│  ├─ config.yaml
-│  └─ requirements.txt
-├─ elastic/
-│  ├─ elastic_agent_example.yml
-│  ├─ ingest_pipeline.json
-│  └─ index_template.json
-├─ embeddings/
-├─ docs/
-│  └─ project_report.md
-├─ .env.example
-└─ .gitignore
+├── screenshots/
+│   ├── architecture.png
+│   ├── infrastructure_hosts.png
+│   ├── kibana-discover-parsed-logs.jpg
+│   └── kibana-observability-dashboard.jpg
+├── README.md
+└── .gitkeep
 ```
 
 ---
 
-## Quick start (local)
-```bash
-cd agent
-python -m venv .venv
-# Windows: .venv\Scripts\activate
-# macOS/Linux: source .venv/bin/activate
-pip install -r requirements.txt
-python atomic_agent.py
-```
+## ✅ Status
 
-Logs will be written to the path configured in `agent/config.yaml`.
+**Project Status:** ✅ Complete  
+**Use Case:** Portfolio / Demonstration / Interview-ready
 
 ---
 
-## Run on Azure VM (minimal)
-1. Create an Azure VM (Ubuntu or Windows)
-2. Install Python 3.10+
-3. Clone this repo
-4. Follow **Quick start (local)**
-5. (Optional) Install Elastic Agent and configure it to ship `agent.log`
+## 📌 Resume-Ready Summary
+
+> Built a production-style Azure observability pipeline using a custom Python-based Atomic Agent, Elastic ingest pipelines, and Kibana dashboards to monitor real-time VM metrics and structured logs.
 
 ---
 
-## Configuration
-- `agent/config.yaml` controls agent behavior and logging
-- `.env` (optional) controls Elastic APM settings
+If you’d like:
+- Terraform version  
+- Agent-as-a-service design  
+- A follow-up Agentic AI project  
 
----
-
-## Security notes
-- Do not commit `.env`, tokens, SSH keys, or certificates
-- This repo includes `.gitignore` and `.env.example` for safety
-
----
-
-## Resume keywords
-Azure • Elastic Stack • Elastic APM • Observability • Structured Logging • Ingest Pipelines • Index Templates • Tracing • Vector Search • Embeddings • Python Automation
+Just say the word 🚀
