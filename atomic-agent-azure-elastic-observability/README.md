@@ -95,17 +95,18 @@ This project goes beyond basic logging by demonstrating:
 
 ```
 atomic-agent-azure-elastic-observability/
-├── agent/
-├── elastic/
-├── embeddings/
-├── docs/
-├── screenshots/
+├── agent/                     # Atomic Agent source code
+├── elastic/                   # Ingest pipelines, index templates
+├── embeddings/                # Embedding generation logic (future-ready)
+├── docs/                      # Design notes and documentation
+├── screenshots/               # Evidence used in README
 │   ├── architecture.png
 │   ├── infrastructure_hosts.png
 │   ├── kibana-discover-parsed-logs.jpg
 │   └── kibana-observability-dashboard.jpg
 ├── README.md
 └── .gitkeep
+
 ```
 
 ---
