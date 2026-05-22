@@ -106,7 +106,7 @@ Atomic Agent → Elastic APM → Elasticsearch → Kibana
 
 ---
 
-# 🧩 Project 4: AI Systems for Production Intelligence (ELK Use Cases)
+##  🧩 Project 4: AI Systems for Production Intelligence (ELK Use Cases)
 
 📁 `elk-ai-usecases`
 
@@ -166,7 +166,7 @@ This section demonstrates how **AI systems interact with real production telemet
 
 ---
 
-# 🔹 Project 5: Enterprise GenAI Alignment Assistant
+##  🔹 Project 5: Enterprise GenAI Alignment Assistant
 
 📁 `enterprise-genai-alignment-assistant`
 
