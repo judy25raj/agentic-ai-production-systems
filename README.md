@@ -165,6 +165,46 @@ This section demonstrates how **AI systems interact with real production telemet
 **Status:** ✅ All Use Cases Implemented
 
 ---
+---
+
+# 🔹 Project 5: Enterprise GenAI Alignment Assistant
+
+📁 `enterprise-genai-alignment-assistant`
+
+Production-style enterprise GenAI assistant using **Ollama + Llama 3.1** with governance-focused AI orchestration.
+
+### Architecture Flow
+
+User → Flask API → RAG-style Policy Retrieval → Guardrails → Ollama + Llama 3.1 → Reward Scoring → Judge Agent → Alignment Evidence UI
+
+### Highlights
+
+* Real-time local LLM inference using Ollama
+* Enterprise policy-aware AI assistant
+* RAG-style retrieval from enterprise knowledge base
+* Responsible AI guardrails
+* Candidate answer comparison
+* Reward-style scoring workflow
+* Judge-agent response selection
+* Transparent alignment evidence UI
+* Flask backend + lightweight frontend architecture
+
+### Concepts Demonstrated
+
+* Prompt Engineering
+* Retrieval-Augmented Generation (RAG)
+* Agentic AI orchestration
+* Responsible AI workflows
+* RLHF-style alignment concepts
+* PEFT / LoRA conceptual workflow
+* Enterprise AI governance patterns
+
+### Tech Stack
+
+Python • Flask • Ollama • Llama 3.1 • HTML • CSS • JavaScript
+
+**Status:** ✅ Complete
+
 
 # 📁 Repository Structure
 
