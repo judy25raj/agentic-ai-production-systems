@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enterprise GenAI Assistant</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <div>
+        <h1>Enterprise GenAI Assistant</h1>
+        <p>Policy-aware chatbot with RAG, guardrails, judge agent, Ollama, Llama 3.1, and RLHF-style alignment</p>
+      </div>
+      <span class="badge"><span></span> Demo environment</span>
+    </header>
+
+    <section class="layout">
+      <section class="card chat-card">
+        <div class="card-head">
+          <div>
+            <h2>Chat</h2>
+            <p>Ask a company-policy question.</p>
+          </div>
+          <button id="clearBtn" class="secondary">Clear</button>
+        </div>
+
+        <div class="chips">
+          <button data-question="What is our remote work policy?">Remote work policy</button>
+          <button data-question="Can I share customer records with an external AI tool?">Customer data sharing</button>
+          <button data-question="What should I do if a request includes credentials or tokens?">Credentials or tokens</button>
+        </div>
+
+        <div id="messages" class="messages">
+          <div class="message assistant">
+            <strong>Enterprise Assistant</strong>
+            <p>Hello. Ask me a company-policy question and I will answer using a governed GenAI flow.</p>
+          </div>
+        </div>
+
+        <form id="chatForm" class="input-row">
+          <input id="questionInput" type="text" placeholder="Ask a policy question..." autocomplete="off" />
+          <button type="submit">Ask</button>
+        </form>
+      </section>
+
+      <aside class="side">
+        <section class="card">
+          <h2>Flow</h2>
+          <div class="flow-item"><b>1</b><div><strong>RAG + Guardrails</strong><p>Finds the right policy context.</p></div></div>
+          <div class="flow-item"><b>2</b><div><strong>Real-Time LLM</strong><p>Uses Ollama and Llama 3.1 locally.</p></div></div>
+          <div class="flow-item"><b>3</b><div><strong>Reward + Judge</strong><p>Scores and selects the safest answer.</p></div></div>
+        </section>
+        <section class="card">
+          <h2>Client message</h2>
+          <p>This is a governed assistant, not a generic chatbot. It retrieves policy, applies guardrails, compares candidate answers, and shows alignment evidence.</p>
+        </section>
+      </aside>
+    </section>
+
+    <section id="evidence" class="card evidence hidden">
+      <h2>Alignment evidence</h2>
+      <p>Behind-the-scenes trace for the latest answer.</p>
+      <div class="evidence-grid">
+        <div>
+          <h3>Retrieved policy context</h3>
+          <div id="policyContext"></div>
+        </div>
+        <div>
+          <h3>Reward model scoring</h3>
+          <div id="scoring"></div>
+        </div>
+      </div>
+      <div class="judge">
+        <h3>Judge agent decision</h3>
+        <div id="judgeDecision"></div>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

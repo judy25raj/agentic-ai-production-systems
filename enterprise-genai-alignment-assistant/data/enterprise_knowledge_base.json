@@ -1,0 +1,32 @@
+{
+  "policies": [
+    {
+      "id": "POL-HR-001",
+      "title": "Remote Work Policy",
+      "owner": "HR",
+      "content": "Employees may work remotely up to three days per week with manager approval. Critical production support roles must maintain agreed coverage hours. Remote work must follow company security and data protection rules.",
+      "keywords": ["remote", "work", "hybrid", "manager", "approval", "coverage", "security"]
+    },
+    {
+      "id": "POL-DP-001",
+      "title": "Customer Data Protection Policy",
+      "owner": "Data Privacy",
+      "content": "Customer records, personal information, confidential business documents, credentials, tokens, and regulated data must not be shared with external AI tools or unapproved third-party systems. Employees must use only approved enterprise platforms for customer data processing.",
+      "keywords": ["customer", "data", "privacy", "confidential", "credentials", "tokens", "external", "AI"]
+    },
+    {
+      "id": "POL-AI-001",
+      "title": "Responsible AI Policy",
+      "owner": "AI Governance",
+      "content": "AI systems must provide truthful, grounded, and safe answers. The chatbot must avoid exposing secrets, personal data, credentials, confidential customer records, financial records, or regulated data. If information is missing, the assistant must say it does not know and recommend escalation to the correct enterprise team.",
+      "keywords": ["responsible", "AI", "governance", "truthful", "grounded", "safe", "escalation"]
+    },
+    {
+      "id": "POL-SEC-001",
+      "title": "Security Escalation Policy",
+      "owner": "Security",
+      "content": "Suspected incidents involving secrets, credentials, privileged access, or customer data exposure must be escalated to the Security team immediately. Employees must not paste production credentials into chatbots, tickets, or unapproved tools.",
+      "keywords": ["security", "incident", "secrets", "credentials", "privileged", "escalate"]
+    }
+  ]
+}
