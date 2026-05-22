@@ -159,16 +159,12 @@ The assistant does not only generate text. It shows the reasoning evidence neede
 5. Judge agent final decision
 6. Phase summary connecting RAG, Responsible AI, PEFT/LoRA concept, and RLHF-style alignment
 
-## GitHub Portfolio Positioning
+## Important Note
 
-Suggested repository name:
+This project demonstrates enterprise GenAI orchestration and alignment workflows at the application layer. It does not perform actual model fine-tuning, LoRA adapter training, or full RLHF training. PEFT, LoRA, and RLHF are represented conceptually through SFT examples, enterprise answer patterns, reward-style scoring, and judge-agent selection.
 
-```text
-enterprise-genai-ollama-assistant
-```
+## Portfolio Summary
 
-Suggested GitHub description:
+This project shows how a real-time local LLM can be combined with enterprise policy retrieval, guardrails, reward scoring, and judge-agent validation to produce safer and more transparent AI responses.
 
-```text
-Enterprise GenAI assistant using Flask, Ollama, Llama 3.1, RAG, guardrails, reward scoring, and judge-agent alignment evidence.
-```
+**Status: Project Complete**
