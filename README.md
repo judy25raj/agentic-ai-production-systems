@@ -2,9 +2,9 @@
 
 **Author: Judy Raj**
 
-Production-grade AI engineering portfolio focused on **Agentic AI, LLM systems, evaluation workflows, AI governance, and real-time production intelligence**.
+Production-grade AI engineering portfolio focused on **Agentic AI, GenAI systems, automation workflows, AI governance, and enterprise AI engineering**.
 
-These are **engineering systems — not demos**.
+These are **engineering systems — not simple demos**.
 They reflect real-world practices used in **enterprise, regulated, and AI-first environments**.
 
 ---
@@ -16,10 +16,10 @@ This repository demonstrates how modern AI systems are built with:
 * **Agentic AI workflows** (tool-using, multi-step reasoning)
 * **Retrieval-Augmented Generation (RAG)**
 * **LLM evaluation using Judge Agents**
-* **AI reliability & hallucination detection**
-* **AI system governance (tokens, cost, latency, failures)**
-* **Production telemetry (logs, metrics, traces)**
-* **Real-time decision intelligence**
+* **AI governance and alignment workflows**
+* **Enterprise AI automation and orchestration**
+* **Reward-scoring and response validation**
+* **Real-time AI decision intelligence**
 * **Secure, production-ready architecture**
 
 ---
@@ -30,9 +30,9 @@ Most AI projects stop at generating responses.
 
 This portfolio focuses on:
 
-👉 AI systems that are **observable, measurable, and governable**
-👉 AI systems that support **real engineering decisions**
-👉 AI systems designed for **production, not experimentation**
+👉 AI systems that are **governed, reliable, and measurable**
+👉 AI systems that support **real engineering and business decisions**
+👉 AI systems designed for **production, enterprise, and operational use**
 
 ---
 
@@ -165,7 +165,6 @@ This section demonstrates how **AI systems interact with real production telemet
 **Status:** ✅ All Use Cases Implemented
 
 ---
----
 
 # 🔹 Project 5: Enterprise GenAI Alignment Assistant
 
@@ -205,6 +204,7 @@ Python • Flask • Ollama • Llama 3.1 • HTML • CSS • JavaScript
 
 **Status:** ✅ Complete
 
+---
 
 # 📁 Repository Structure
 
@@ -220,6 +220,7 @@ agentic-ai-production-systems/
 │   ├── UC4-data-correlation-engine/
 │   ├── UC5-ai-dashboard-generation/
 │   └── UC6-ai-visual-intelligence/
+├── enterprise-genai-alignment-assistant/
 ├── .gitignore
 └── README.md
 ```
@@ -237,18 +238,21 @@ agentic-ai-production-systems/
 
 # 👩‍💻 About the Author
 
-**Judy Raj — AI Engineer | Agentic AI | Automation & Observability**
+**Judy Raj — AI Engineer | Agentic AI | Automation & AI Governance**
 
-Specializing in building **production-grade AI systems** with:
+Specializing in building **production-grade AI and enterprise GenAI systems** with:
 
-* Agentic workflows
+* Agentic AI workflows
+* Retrieval-Augmented Generation (RAG)
 * LLM evaluation and governance
-* Real-time telemetry and monitoring
+* AI automation and orchestration
+* Judge-agent alignment workflows
 * Enterprise AI system design
+* AI reliability, transparency, and operational intelligence
 
 ---
 
 # 🚀 Final Note
 
 This portfolio demonstrates not just AI usage —
-but the ability to build **reliable, measurable, and production-ready AI systems**.
+but the engineering of **reliable, governed, automated, and production-ready AI systems** designed for enterprise-scale environments.
